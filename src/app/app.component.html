@@ -1,7 +1,11 @@
 <main>
   <app-learning-resources />
-
+  <p appSafeLink></p>
   <hr />
 
   <app-auth />
+
+  @if(isAdmin()) {
+    <p>test</p>
+  }
 </main>

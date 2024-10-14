@@ -6,6 +6,7 @@ import { Permission } from './auth.model';
   providedIn: 'root',
 })
 export class AuthService {
+  [x: string]: any;
   activePermission = signal<Permission>('guest');
 
   authenticate(email: string, password: string) {
